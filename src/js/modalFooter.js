@@ -21,7 +21,7 @@ const swiper = new Swiper('.image-slider', {
     draggable: true,
   },
 
-  simulateTouch: true,
+  simulateTouch: false,
   touchRatio: 1,
   touchAngle: 45,
   grabCursor: true,
@@ -32,29 +32,29 @@ const swiper = new Swiper('.image-slider', {
   },
   keyboard: {
     enabled: true,
-    onlyInViewport: true,
-    pageUpDown: true,
+    onlyInViewport: false,
+    pageUpDown: false,
   },
   mousewheel: {
     sensitivity: 1,
   },
 
-  autoHeight: true,
+  autoHeight: false,
 
-  slidesPerView: 2,
+  slidesPerView: 1,
 
   slidesPerGroup: 1,
 
-  watchOverflow: true,
+  watchOverflow: false,
 
-  spaceBetween: 10,
+  //spaceBetween: 10,
 
   loop: true,
 
   autoplay: {
     delay: 2000,
-    stopOnLastSlide: true,
-    disableOnInteraction: false,
+    stopOnLastSlide: false,
+    disableOnInteraction: true,
   },
   speed: 1000,
 
@@ -68,21 +68,21 @@ const swiper = new Swiper('.image-slider', {
   //       limitRotation: true
   //   },
 
- //  effect: 'cube',
+  effect: 'cube',
 
-  //   cubeEffect: {
-  //       slideShadows: true,
-  //       shadow: true,
-  //       shadowOffset: 20,
-  //       shadowScale: 0.94
-  //   },
+    cubeEffect: {
+        slideShadows: true,
+        shadow: true,
+        shadowOffset: 20,
+        shadowScale: 0.94
+    },
 
-  effect: 'coverflow',
-  coverFlowEffect: {
-    rotate: 30,
-    stretch: 50,
-    slideShadows: true,
-  },
+  // effect: 'coverflow',
+  // coverFlowEffect: {
+  //   rotate: 10,
+  //   stretch: 30,
+  //   slideShadows: false,
+  // },
 
   //  breakpoints: {
   //          '@.075': {
@@ -104,11 +104,11 @@ const swiper = new Swiper('.image-slider', {
       
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       
     },
     992: {
-      slidesPerView: 3,
+      slidesPerView: 1,
       
       
     },
@@ -168,3 +168,5 @@ export function onEscKeyPress(event) {
 // sliderBlock.addEventListener('mouseleave', function (e) {
 //     myImageSlider.autoplay.stop();
 //  });
+
+export default swiper;

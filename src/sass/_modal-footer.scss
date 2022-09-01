@@ -6,12 +6,12 @@
 }
 
 .image-slider {
-    //  position: absolute;
-    //  bottom: 30%;
-    //  left: 30%;
-    //  transform: translate(-30%, -30%);
+     position: absolute;
+     bottom: 55%;
+     left: 40%;
+     transform: translate(-70%, -70%);
     padding: 30px 0 70px 0;
-    width: 500px;
+    //width: 30%;
 
 }
 
@@ -57,15 +57,15 @@ background: linear-gradient(175deg,#6f0000, #6f0000, #6f0000,
 .swiper-container {
     padding-bottom: 50px;
     margin: 0 auto;
-    width: 50%;
+    width: 350px;
     //overflow: hidden;
     transform: translateY(60%);
     @media screen and (max-width: 768px) {
-        width: 70%;
+        width: 350px;
         transform: translateY(40%);
     }
     @media screen and (max-width: 992px) {
-        width: 80%;
+        width: 400px;
         
     }
 }
